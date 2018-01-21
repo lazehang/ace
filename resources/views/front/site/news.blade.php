@@ -5,8 +5,12 @@
 	  <p><a href="https://www.facebook.com/pg/FC.Aaace/" target="_blank">Follow us on <i class="fab fa-facebook"></i></a></p>
 	</div>
 
-  	<iframe id="fbIframe" src="https://www.powr.io/plugins/instagram-feed/view?unique_label=40f55d5d_1515404771&external_type=iframe" width="100%" scrolling="yes" height="600" frameborder="0"></iframe>
+  	<!-- <iframe id="fbIframe" src="https://www.powr.io/plugins/instagram-feed/view?unique_label=40f55d5d_1515404771&external_type=iframe" width="100%" scrolling="yes" height="600" frameborder="0"></iframe> -->
 
+  	<!-- powr tool HTML template -->
+	<script src="//www.powr.io/powr.js?external-type=html"></script> 
+	<div class="powr-instagram-feed" id="40f55d5d_1515404771"></div>
+	
 	<div class="section-title py-5">
 	  <a href="https://www.facebook.com/pg/FC.Aaace/posts/?ref=page_internal" target="_blank" class="btn">
 	  	<p>View more on <i class="fab fa-facebook"></i></p>
