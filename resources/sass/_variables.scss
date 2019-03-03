@@ -1,0 +1,74 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway');
+// Body
+$body-bg: #f5f8fa;
+// Borders
+$laravel-border-color: darken($body-bg,
+10%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+// Brands
+$brand-primary: #3097D1;
+$brand-info: #8eb4cb;
+$brand-success: #2ab27b;
+$brand-warning: #cbb956;
+$brand-danger: #bf5329;
+// Typography
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+$font-family-sans-serif: "Raleway",
+sans-serif;
+$line-height-base: 1.6;
+$text-color: #636b6f;
+// Navbar
+$navbar-default-bg: #fff;
+// Buttons
+$btn-default-color: $text-color;
+// Inputs
+$input-border: lighten($text-color,
+40%);
+$input-border-focus: lighten($brand-primary,
+25%);
+$input-color-placeholder: lighten($text-color,
+30%);
+// Panels
+$panel-default-heading-bg: #fff;
+$black: #000;
+$add-to-cart: #961c12;
+$dark: $black;
+$light: #fff;
+$white: #fff;
+$grey-light: #f1f2f2;
+$grey-dark: #e6e6e6;
+$grey-hover: #cbcbcb;
+$grey-extra: #424242;
+$body-color: $grey-light;
+$icon-size:30px;
+$fixButtonBarHeight:62px;
+$fixButtonBarHeightMobile:55px;
+$theme-colors: ( "dark": $dark);
+$font-size-base: 0.62rem; // 16px
+$banner-title: $font-size-base * 4.612;
+$h1-font-size: $font-size-base * 3;
+$h2-font-size: $font-size-base * 2.4;
+$h3-font-size: $font-size-base * 2.2;
+$h4-font-size: $font-size-base * 1.8;
+$h5-font-size: $font-size-base * 1.43;
+$h6-font-size: $font-size-base * 1.43;
+$h7-font-size: $font-size-base;
+$font-family-base: 'Raleway',
+san-serif;
+$font-family-base-bold: $font-family-base;
+$font-family-base-semibold: $font-family-base;
+$font-family-big-noodle: $font-family-base;
+$input-btn-height: 40px;
+$container-max-widths: ( sm: 100%,
+md: 100%,
+lg: 100%,
+xl: 1200px);
+$standard-max-content-width: 995px;
+$lg-max-content-width: 1200px;
+$banner-radius-size: 10px;

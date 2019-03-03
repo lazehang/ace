@@ -1,0 +1,32 @@
+nav#navbar-ace {
+    background: transparent;
+    color: #fff;
+    &.scrolled,
+    &.open {
+        padding: 0 1rem;
+        background: #fff;
+        // transition: padding 0.25s ease-in;
+        a {
+            &.nav-link {
+                color: #172b5f;
+            }
+        }
+        .navbar-brand {
+            img {
+                height: 70px;
+                transition: height 0.25s ease-in;
+            }
+        }
+    }
+    a {
+        &.nav-link {
+            color: #fff;
+        }
+    }
+    .navbar-brand {
+        img {
+            height: 75px;
+            transition: height 0.25s ease-in;
+        }
+    }
+}

@@ -1,0 +1,282 @@
+@mixin font-noodle {
+    font-family: $font-family-big-noodle;
+    letter-spacing: 0.18rem;
+}
+
+@mixin font-semibold {
+    font-family: $font-family-base-semibold;
+    letter-spacing: 0.02rem;
+}
+
+@mixin font-bold {
+    font-family: $font-family-base-bold;
+}
+
+@mixin baseBtn {
+    @include font-noodle;
+    font-size: $h4-font-size;
+    border: 1px solid transparent;
+    cursor: pointer;
+    height: 40px;
+    transition: all .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        transition: all .5s;
+    }
+    &.full {
+        width: 100%;
+    }
+    &.disabled {
+        opacity: 1;
+    }
+    &:focus {
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+@mixin btn--dark_style {
+    background-color: $black;
+    color: $white;
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $white;
+    }
+    &:hover {
+        background-color: $white;
+        color: $black;
+        border-color: #000;
+        a,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: $black;
+        }
+    }
+}
+
+@mixin btn--add-to-cart-style {
+    background-color: $add-to-cart;
+    color: $white;
+    border-color: $add-to-cart;
+    &:hover {
+        background-color: $grey-hover;
+        border-color: $grey-hover;
+    }
+    &.disabled:hover {
+        @include btn--extra-dark-style;
+    }
+}
+
+@mixin btn--add-to-cart {
+    @include baseBtn;
+    width: 260px;
+    height: 45px;
+    @include btn--add-to-cart-style;
+}
+
+@mixin btn--light_style {
+    background-color: transparent;
+    color: $dark;
+    border-color: $dark !important;
+    &:hover {
+        background-color: $grey-hover;
+    }
+}
+
+@mixin btn--transparent-style {
+    background-color: transparent;
+    color: $light;
+    border-color: $light;
+    &:hover {
+        background-color: $grey-hover;
+        color: $dark;
+    }
+}
+
+@mixin btn--white-style {
+    background-color: $white;
+    color: $black;
+    border-color: $black;
+    &:hover {
+        background-color: $grey-hover;
+    }
+}
+
+@mixin btn--extra-dark-style {
+    background-color: $grey-extra;
+    color: $light;
+    border-color: $dark;
+}
+
+@mixin btn--extra-dark {
+    @include baseBtn;
+    @include btn--extra-dark-style;
+}
+
+@mixin btn--dark-red {
+    @include baseBtn;
+    @include btn--add-to-cart-style;
+}
+
+@mixin btn--dark {
+    @include baseBtn;
+    @include btn--dark_style;
+}
+
+@mixin btn--white {
+    @include baseBtn;
+    @include btn--white-style;
+}
+
+@mixin btn--light {
+    @include baseBtn;
+    @include btn--light_style;
+}
+
+@mixin btn--transparent {
+    @include baseBtn;
+    @include btn--transparent-style;
+}
+
+@mixin btnGrey {
+    @include baseBtn;
+    background-color: $grey-dark;
+    color: $black;
+    border-color: $black;
+    &:hover {
+        background-color: $white;
+        border-color: $black;
+    }
+}
+
+@mixin bxslider {
+    overflow: visible;
+    position: relative;
+    li {
+        a {
+            background-color: $grey-dark;
+            display: block;
+            padding: 18% 0 15%;
+        }
+        img {
+            width: 80%;
+        }
+    }
+    .carousel-control {
+        .arrow {
+            border-color: $black;
+            cursor: pointer;
+        }
+        &.left {
+            left: -20px;
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
+        }
+        &.right {
+            right: -20px;
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
+        }
+    }
+}
+
+@mixin mybtn {
+    &.disabled {
+        background-color: $grey-light;
+    }
+    &:hover {
+        background-color: transparent;
+    }
+}
+
+@mixin bottomLine {
+    border-bottom: 1px solid $grey-dark;
+}
+
+@mixin banner-title {
+    font-size: $banner-title;
+    color: $light;
+    font-family: $font-family-big-noodle;
+}
+
+@mixin topLine {
+    border-top: 1px solid $grey-dark;
+}
+
+@mixin linkColor {
+    color: $black;
+    transition: 0.5s all;
+    &:hover {
+        color: $grey-hover;
+    }
+}
+
+@mixin page-title-line {
+    content: "";
+    width: 30px;
+    height: 1px;
+    position: absolute;
+    left: -45px;
+    top: 50%;
+    background-color: $white;
+}
+
+@mixin icon {
+    &--cart {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: $icon-size;
+        height: $icon-size;
+        background-image: url(/icons/cart_update.svg);
+        &:hover {
+            background-image: url(/icons/cart_update--black.svg);
+        }
+    }
+}
+
+@mixin icon--hover {
+    @include icon;
+    &--cart {
+        background-image: url(/icons/cart_update--black.svg);
+    }
+}
+
+@mixin fixingbar {
+    height: $fixButtonBarHeight;
+    background-color: $dark;
+    @include media-breakpoint-down (md) {
+        height: $fixButtonBarHeightMobile;
+    }
+    .h6.text-uppercase {
+        font-size: $h7-font-size;
+    }
+    button {
+        &.disabled {
+            @include btn--extra-dark;
+        }
+        @include btn--add-to-cart;
+        width: 160px;
+    }
+}
