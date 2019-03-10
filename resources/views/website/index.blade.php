@@ -25,6 +25,16 @@
       </div>
     </div>
 
+    <section class="team py-5 alt">
+        <div class="container">
+            <div class="sec-title light pb-5">
+                <h2>Our Players</h2>
+            </div>
+            
+            <team-slider />
+        </div>
+    </section>
+
     <section class="news-section my-5">
         <div class="container">
             <div class="mb-3">
@@ -125,4 +135,5 @@
             </div>
         </div>
     </section>
+
 @endsection

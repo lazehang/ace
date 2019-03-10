@@ -12,8 +12,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #a4040499;
+    // background-color: #a4040499;
     padding-top: 95px;
+    min-height: 700px;
     @include media-breakpoint-down(md) {
         height: auto;
     }

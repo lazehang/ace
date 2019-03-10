@@ -1,5 +1,5 @@
 <nav id="navbar-ace" class="navbar fixed-top navbar-expand-lg navbar-light px-3">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="/">
       <img src="{{ asset('/images/fcace.webp') }}" alt="logo" />
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">

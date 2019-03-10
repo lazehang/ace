@@ -1,9 +1,25 @@
 .btn {
-    border: 1px solid #ffffff;
     padding: 0.5rem 1em;
+    border: 1px solid #172b5f;
+    color: #172b5f;
     background: transparent;
-    color: #fff;
     &:hover {
-        background: #172b5f;
+        background: #fff;
+    }
+    &-primary {
+        border: 1px solid #ffffff;
+        color: #fff;
+        background: transparent;
+        &:hover {
+            background: #172b5f;
+        }
+    }
+    &-default {
+        border: 1px solid #172b5f;
+        color: #172b5f;
+        background: transparent;
+        &:hover {
+            background: #172b5f;
+        }
     }
 }
