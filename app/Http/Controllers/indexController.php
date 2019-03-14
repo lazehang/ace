@@ -28,4 +28,8 @@ class indexController extends Controller
         }
         
     }
+
+    public function inactive() {
+        return view('welcome');
+    }
 }

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <carousel-3d :controls-visible="true" :space="300" height="400" >
+        <carousel-3d :controls-visible="true" :space="300" height="400" dir="ltr">
             <slide v-for="(player, index) in team" :index="index" :key="index">
                 <figure data-toggle="modal" data-target="#playerDesc" @click="changeModal(player)">
                     <img :src="player.img" :alt="player.name">
