@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway);@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -10760,6 +10760,7 @@ body .h1,
 body .banner .content h2,
 .banner .content body h2 {
   font-size: 1.86rem;
+  font-weight: 800;
 }
 
 .standard-typography h2,
@@ -11817,6 +11818,19 @@ nav#navbar-ace .navbar-brand img {
   }
 }
 
+.banner--news {
+  height: 300px;
+  background-image: url(/images/cool.svg?c5c871ea14db3b5f98ac9ab886cc8107), url(/images/blue.jpg?d4f5439d180d1a677d4f4548e98cf86e);
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
 .banner .content p {
   font-weight: 400;
   margin-bottom: 30px;
@@ -11843,9 +11857,53 @@ section.alt {
 
 .news {
   width: auto;
-  height: 250px;
-  background: #172b5f;
   margin-top: 0.5rem;
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.news .post-content {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+}
+
+.news .post-content:hover {
+  text-decoration: underline;
+}
+
+.news:hover .post-image,
+.news :focus .post-image {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.news .post-image {
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.news .post-image:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #12114a;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+}
+
+.news a {
+  color: #fff;
+}
+
+.news a:hover {
+  color: #ccc;
 }
 
 .news-block {

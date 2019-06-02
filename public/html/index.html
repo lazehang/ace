@@ -8,15 +8,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Fc Ace</title>
-    <meta name="description" content="">
+    <meta name="description" content="FC Ace, Hong Kong base nepali Football Club">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="2XI0LOORa4dIb91m9FpvkawYX6mBHtMU7QqSyCCs">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/app.css">
 </head>    <body>
         <div id="app" class="">
                 <nav id="navbar-ace" class="navbar fixed-top navbar-expand-lg navbar-light px-3">
-  <a class="navbar-brand" href="#">
-      <img src="http://192.168.8.3:8000/images/fcace.webp" alt="logo" />
+  <a class="navbar-brand" href="/">
+      <img src="http://127.0.0.1:8000/images/fcace.webp" alt="logo" />
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -32,17 +33,11 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Pricing</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-    </ul>
+      <!-- Authentication Links -->
+              <li class="nav-item">
+            <a class="nav-link" href="http://127.0.0.1:8000/login">Login</a>
+        </li>
+        </ul>
   </div>
 </nav>
     <div class="banner">
@@ -56,17 +51,27 @@
                     <a href="#" class="btn btn-primary">Our Products</a>
                 </div>
                 <div class="col-md-4 my-3">
-                    <div class="news">
+                                    <div class="news">
                         
                     </div>
-                    <div class="news">
+                                    <div class="news">
                         
                     </div>
-                </div>
+                                </div>
             </div>
         </div>
       </div>
     </div>
+
+    <section class="team py-5 alt">
+        <div class="container">
+            <div class="sec-title light pb-5">
+                <h2>Our Players</h2>
+            </div>
+            
+            <team-slider />
+        </div>
+    </section>
 
     <section class="news-section my-5">
         <div class="container">
@@ -76,25 +81,77 @@
 
             <div class="row">
                 <!-- News block --> 
+                                
                 <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
                     <div class="inner-box">
                         <div class="image-box">
-                            <figure class="image"><a href="blog-single.html"><img src="../../images/blue.jpg" alt=""></a></figure>
+                            <figure class="image"><a href="blog-single.html"><img src="//images.ctfassets.net/htg8yrtsy5ac/4shwYI3POEGkw0Eg6kcyaQ/cbe841f4e84427361889e6eec160004f/felix-russell-saw-112140.jpg" alt=""></a></figure>
                         </div>
                         <div class="lower-content">
                             <div class="info-box">
                                 <span class="date">19- JAN- 2019</span>
                                 <span class="author">Jamie Ashbrook</span>
                             </div>
-                            <h4><a href="blog-single.html">Why Lead Generation Is Key For Business Growth.</a></h4>
-                            <div class="text">Te probo omnis clita mea. In suas singulis consectetuer sed, vim fugit homero labores </div>
+                            <h4><a href="blog-single.html">Automate with webhooks</a></h4>
+                            <div class="text">Webhooks notify you, another person or system when resources have changed by calling a given HTTP endpoint. </div>
                             <div class="link-box"><a href="blog-single.html"><span class="fa fa-angle-right"></span>Read More</a></div>
                         </div>
                     </div>
                 </div>
-
+                                
+                <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><a href="blog-single.html"><img src="//images.ctfassets.net/htg8yrtsy5ac/4NzwDSDlGECGIiokKomsyI/981eb1952337d7c6f2f8cc413ee46e8b/denys-nevozhai-100695.jpg" alt=""></a></figure>
+                        </div>
+                        <div class="lower-content">
+                            <div class="info-box">
+                                <span class="date">19- JAN- 2019</span>
+                                <span class="author">Jamie Ashbrook</span>
+                            </div>
+                            <h4><a href="blog-single.html">Static sites are great</a></h4>
+                            <div class="text">Worry less about security, caching, and talking to the server. Static sites are the new thing. </div>
+                            <div class="link-box"><a href="blog-single.html"><span class="fa fa-angle-right"></span>Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+                                
+                <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><a href="blog-single.html"><img src="//images.ctfassets.net/htg8yrtsy5ac/6Od9v3wzLOysiMum0Wkmme/5a5c8bba00f832a442637a4be52014f6/cameron-kirby-88711.jpg" alt=""></a></figure>
+                        </div>
+                        <div class="lower-content">
+                            <div class="info-box">
+                                <span class="date">19- JAN- 2019</span>
+                                <span class="author">Jamie Ashbrook</span>
+                            </div>
+                            <h4><a href="blog-single.html">Hello world</a></h4>
+                            <div class="text">Your very first content with Contentful, pulled in JSON format using the Content Delivery API. </div>
+                            <div class="link-box"><a href="blog-single.html"><span class="fa fa-angle-right"></span>Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+                                
+                <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><a href="blog-single.html"><img src="//images.ctfassets.net/htg8yrtsy5ac/2fqzR4MHolaFYd8wUED3Pd/ae5d35ae35e6f92e0cb3b5a607a90d10/2384420978250418.jpg" alt=""></a></figure>
+                        </div>
+                        <div class="lower-content">
+                            <div class="info-box">
+                                <span class="date">19- JAN- 2019</span>
+                                <span class="author">Jamie Ashbrook</span>
+                            </div>
+                            <h4><a href="blog-single.html">Fc Ace Launches New Website</a></h4>
+                            <div class="text">In the start of 2019, FC ACE members decided to build a website to show their online presence. </div>
+                            <div class="link-box"><a href="blog-single.html"><span class="fa fa-angle-right"></span>Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+                
                 <!-- News block --> 
-                <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: fadeInUp;">
+                <!-- <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: fadeInUp;">
                     <div class="inner-box">
                         <div class="image-box">
                             <figure class="image"><a href="blog-single.html"><img src="../../images/blue.jpg" alt=""></a></figure>
@@ -110,8 +167,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- News block --> 
                 <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp animated" data-wow-delay="800ms" style="visibility: visible; animation-delay: 800ms; animation-name: fadeInUp;">
                     <div class="inner-box">
                         <div class="image-box">
@@ -127,7 +182,7 @@
                             <div class="link-box"><a href="blog-single.html"><span class="fa fa-angle-right"></span>Read More</a></div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -168,12 +223,13 @@
             </div>
         </div>
     </section>
+
        </div>
        <footer class="site-footer">
   <div class="row">
   <div class="col-12 col-md-4">
         <div class="site-footer__logo" itemscope="" >
-          <img src="http://192.168.8.3:8000/images/fcace.webp" width="65"/>
+          <img src="http://127.0.0.1:8000/images/fcace.webp" width="65"/>
           <div class="site-footer__logo-title" itemprop="name">FC ACE</div>
         </div>
       <div class="site-footer__copyright">

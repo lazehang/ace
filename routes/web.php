@@ -27,3 +27,7 @@ Route::get('auth/{provider}/callback', 'Auth\AuthController@handleProviderCallba
 
 Route::get('/inactive', 'indexController@inactive')->name('inactive');
 
+Route::group(['prefix' => 'news'], function() {
+    Route::get('{slug?}', 'indexController@news');
+});
+

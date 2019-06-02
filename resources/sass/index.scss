@@ -11,9 +11,45 @@ section {
 
 .news {
     width: auto;
-    height: 250px;
-    background: #172b5f;
     margin-top: .5rem;
+    position: relative;
+    height: 260px;
+    overflow: hidden;
+    cursor: pointer;
+    .post-content {
+        position: absolute;
+        bottom: 0;
+        padding: 1rem;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &:hover .post-image,
+     :focus .post-image {
+        transform: scale(1.2);
+    }
+    .post-image {
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+        transition: all .5s;
+        &:after {
+            content: '';
+            height: 100%;
+            width: 100%;
+            background: #12114a;
+            opacity: 0.4;
+            position: absolute;
+            top: 0;
+        }
+    }
+    a {
+        color: #fff;
+        &:hover {
+            color: #ccc;
+        }
+    }
 }
 
 .news-block {
